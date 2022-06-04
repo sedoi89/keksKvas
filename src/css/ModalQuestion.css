@@ -1,0 +1,24 @@
+.modalQuestionBody {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    right: -132px;
+    top: 60px;
+    padding: 5px;
+    border-left: 1px solid #404040;
+    border-bottom: 1px solid #404040;
+    border-top: 1px solid #404040;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.modalQuestionBody.active {
+    right: -4px
+}
+
+.modalQuestionContent {
+    display: flex;
+    padding-right: 5px;
+    align-items: center;
+    font-weight: bold;
+}
+

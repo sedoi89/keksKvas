@@ -1,0 +1,88 @@
+.press {
+    background-color: #ede5d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    margin-bottom: 60px;
+}
+
+.press .title {
+    align-self: center;
+}
+
+blockquote {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 90px;
+
+}
+
+
+blockquote img {
+    position: absolute;
+    left: -60px;
+}
+
+blockquote p {
+    max-width: 700px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.cite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+
+}
+
+.cite cite {
+    margin-right: 30px;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.press blockquote .readBtn {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+    width: 166px;
+    height: 45px;
+    text-decoration: none;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.readBtn:hover {
+    border: 2px solid rgba(0, 0, 0, 0.0);
+    color: #ffffff;
+    background-color: #a5a097;
+}
+
+.readBtn:active {
+    border: 2px solid rgba(0, 0, 0, 0.0);
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #8f8a81;
+}
+
+@media (max-width: 375px) {
+    blockquote {
+        margin-left: 5px;
+    }
+
+    .press blockquote .readBtn {
+        text-align: center;
+    }
+}

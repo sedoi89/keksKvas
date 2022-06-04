@@ -1,0 +1,93 @@
+body {
+    width: 100%;
+    min-width: 375px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    margin-bottom: 90px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+
+.nav img {
+    margin-right: 20px;
+    max-width: 140px;
+    max-height: 76px;
+    margin-bottom: 50px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: -40px;
+}
+
+.header li {
+    list-style: none;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+
+}
+
+.header li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.header li a:hover {
+    color: #ffcb78;
+}
+
+.header li a:active {
+    color: rgba(255, 203, 120, 0.3);
+}
+
+.header li:not(li:last-child) {
+    margin-right: 30px;
+}
+
+.headerText {
+
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+@media (max-width: 755px) {
+    .headerText {
+
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+}

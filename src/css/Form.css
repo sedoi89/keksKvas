@@ -1,0 +1,360 @@
+
+.order {
+
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffcb78;
+}
+
+.form {
+    display: flex;
+    width: 37%;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+
+    align-self: center;
+}
+
+.oderFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.order p {
+    width: 37%;
+    margin-bottom: 65px;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.order input:not(.suborder) {
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding-left: 10px;
+}
+
+.order form {
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.fullName {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#fullName {
+    width: 100%;
+}
+
+.email {
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}
+
+#litres {
+    width: 190%;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.order label {
+    margin-bottom: 7px;
+}
+
+
+.error {
+    position: absolute;
+    padding-top: 72px;
+    color: red;
+    font-size: 10px;
+    height: 10px;
+
+
+}
+
+.order .number {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+
+.order .email {
+    display: flex;
+    margin-bottom: 24px;
+    flex-direction: column;
+}
+
+#litres {
+    height: 54px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.order .comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.order textarea {
+    height: 115px;
+    width: 625px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.phoneNumber {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    margin-right: 44px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+
+.error--phone {
+    position: absolute;
+    color: red;
+    font-size: 10px;
+    height: 10px;
+    padding-top: 187px;
+}
+
+#phoneNumber {
+
+    width: 100%;
+}
+
+#additionalNumber {
+    width: 100%;
+}
+
+.additionalNumber {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+
+.order .approval {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 33px;
+}
+
+#approval {
+    width: 41px;
+    height: 37px;
+    margin-right: 9px;
+    margin-bottom: 9px;
+}
+
+.order .suborder {
+    width: 200px;
+    height: 49px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.comment {
+    width: 100%
+}
+
+#comment {
+    width: 100%
+}
+
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked + label::before {
+
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url("VectorSmartObject.png")
+}
+
+.suborder {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color: #834700;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.suborder:hover {
+    background-color: #6a3900;
+
+}
+
+.suborder:active {
+    color: rgba(255, 255, 255, 0.1);
+    background-color: #6a3900;
+
+}
+
+.suborder:disabled {
+    pointer-events: none;
+    color: #999999;
+    background-color: white;
+    border-color: #999999;
+}
+
+#fullName:focus,
+#litres:focus,
+#comment:focus,
+#email:focus,
+#phoneNumber:focus,
+#additionalNumber:focus {
+    background-color: white;
+    border: none;
+}
+
+#fullName:focus,
+#litres:focus,
+#comment:focus,
+#email:focus,
+#phoneNumber:focus,
+#additionalNumber:focus {
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+#comment {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+
+}
+
+@media (max-width: 340px) {
+
+    .additionalNumber {
+        width: 100%;
+    }
+
+    .phoneNumber {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .order p {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 765px) {
+    .additionalNumber {
+        width: 100%;
+    }
+
+    .phone-number {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .order p {
+        width: 80%;
+    }
+
+    .form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .additionalNumber {
+        width: 100%;
+    }
+
+    .phoneNumber {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .order p {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .additionalNumber {
+        width: 100%;
+    }
+
+    .phoneNumber {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .form {
+        width: 60%;
+    }
+
+    .order p {
+        width: 60%;
+    }
+}
